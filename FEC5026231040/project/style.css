@@ -1,0 +1,133 @@
+header img {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 10px;
+  padding: 5px;
+}
+
+.equipment-title {
+  background-color: #e0e0e0;
+  border-top: 3px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.equipment-description {
+  padding: 10px;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+.item-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.mostly-borrowed {
+  background-color: #007bff;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.1rem;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.item-image {
+  width: 100%;
+  max-width: 90px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 0.75rem;
+}
+
+.availability span {
+  width: 6px;
+  height: 6px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.btn-custom {
+  background-color: white;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 3px solid #007bff;
+  border-radius: 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .item-box {
+    padding: 8px;
+  }
+
+  .mostly-borrowed {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+
+  .item-image {
+    max-width: 70px;
+  }
+
+  .item-name {
+    font-size: 0.7rem;
+  }
+
+  .availability {
+    font-size: 0.7rem;
+  }
+
+  .availability span {
+    width: 5px;
+    height: 5px;
+  }
+}
