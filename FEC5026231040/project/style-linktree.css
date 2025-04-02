@@ -1,0 +1,41 @@
+:root {
+  --bs-primary: #201461;
+  --bs-secondary: #e4ecf0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #03204d 5%,
+    #182e50 10%,
+    #424d5e 60%,
+    #6d7a8f 80%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", sans-serif;
+}
+
+.logo {
+  width: 8rem;
+}
+/* Styling untuk membuat Nav Pills berbentuk Oval */
+.nav-pills {
+  background-color: var(--bs-primary); /* Warna background navbar */
+  border-radius: 50px; /* Membuat oval */
+  padding: 5px;
+  display: inline-flex;
+}
+.nav-pills .nav-link {
+  border-radius: 50px; /* Membuat setiap tab menjadi oval */
+  padding: 10px 30px;
+  transition: 0.3s;
+  color: var(--bs-secondary);
+}
+.nav-pills .nav-link.active {
+  background-color: var(--bs-secondary); /* Warna aktif */
+  color: var(--bs-primary);
+}
