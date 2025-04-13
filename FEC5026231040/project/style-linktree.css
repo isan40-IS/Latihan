@@ -4,7 +4,6 @@
 }
 
 body {
-  height: 100vh;
   background: linear-gradient(
     to top,
     #03204d 5%,
@@ -38,4 +37,22 @@ body {
 .nav-pills .nav-link.active {
   background-color: var(--bs-secondary); /* Warna aktif */
   color: var(--bs-primary);
+}
+
+input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.container-shop {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.img-shop {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
 }

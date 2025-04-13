@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <div
@@ -73,14 +77,8 @@
           aria-labelledby="pills-links-tab"
         >
           <div class="container w-75 h-auto">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-              error in similique placeat blanditiis, qui quae illum sunt sit
-              dolor vitae perspiciatis sint distinctio, repudiandae repellat
-              accusantium, nulla commodi consequuntur.
-            </p>
             <div
-              class="container border border-2 border-white rounded-4 bg-transparent"
+              class="container border border-2 border-white rounded-4 bg-transparent my-3"
             >
               <div class="row p-3">
                 <div class="col-4 p-1">
@@ -105,25 +103,145 @@
                   />
                 </div>
               </div>
-              <div class="container"></div>
 
               <p class="text-white fw-bold mb-0">See full shop</p>
               <p class="text-white fw-light small">22 Products</p>
             </div>
-            <div class="container bg-white"></div>
-            <div class="container bg-white"></div>
-            <div class="container bg-white"></div>
+            <div
+              class="container border border-2 border-white rounded-5 bg-transparent my-3 p-3 position-relative"
+            >
+              <a
+                href="#"
+                class="text-white text-decoration-none fw-bold d-block"
+                >Instagram</a
+              >
+              <button
+                aria-label="Share link"
+                class="position-absolute top-50 end-0 translate-middle-y flex h-6 w-6 items-center justify-center rounded-full bg-transparent border-0"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 30 30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="4" r="2" fill="white" />
+                  <circle cx="6" cy="12" r="2" fill="white" />
+                  <circle cx="6" cy="20" r="2" fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="container border border-2 border-white rounded-5 bg-transparent h-auto my-3 p-3 position-relative"
+            >
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Share on Whatsapp</a
+              >
+              <button
+                aria-label="Share link"
+                class="position-absolute top-50 end-0 translate-middle-y flex h-6 w-6 items-center justify-center rounded-full bg-transparent border-0"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 30 30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="4" r="2" fill="white" />
+                  <circle cx="6" cy="12" r="2" fill="white" />
+                  <circle cx="6" cy="20" r="2" fill="white" />
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
+
         <section
           class="tab-pane fade"
           id="pills-shop"
           role="tabpanel"
           aria-labelledby="pills-shop-tab"
         >
-          <p>Ini adalah konten untuk tab <strong>Shop</strong>.</p>
+          <form class="container w-75">
+            <div
+              class="container d-flex align-items-center justify-content-evenly bg-white border border-4 rounded-5"
+            >
+              <!-- Ikon Kaca Pembesar -->
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-secondary"
+              >
+                <path
+                  d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <!-- Input Pencarian -->
+              <input
+                type="text"
+                class="bg-transparent px-3 py-3 border-0 focus w-100"
+                placeholder="Search atmajamgm.wuling's products"
+                value=""
+              />
+            </div>
+          </form>
+
+          <main class="container w-75 mt-4">
+            <div class="row">
+              <a
+                href="https://www.whatsapp.com/product/8861722100605446/6285803733100/?app_absent=0"
+                class="col d-block container-shop position-relative"
+                target="_blank"
+              >
+                <img src="lnktr-img/1.webp" alt="mobil-1" class="img-shop" />
+                <p class="text-white mt-4">
+                  ANGSURAN 160.000 / hari from Atmaja - MGM on WhatsApp.
+                </p>
+                <button
+                  aria-label="Share link"
+                  class="position-absolute bottom-0 end-0 translate-middle-y flex h-6 w-6 items-center justify-center rounded-full bg-transparent border-0"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 30 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="6" cy="4" r="2" fill="white" />
+                    <circle cx="6" cy="12" r="2" fill="white" />
+                    <circle cx="6" cy="20" r="2" fill="white" />
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </main>
         </section>
       </main>
+
+      <div
+        class="container d-flex justify-content-evenly items-center align-items-center bg-white w-50 h-auto border rounded-5 h-auto mt-5 p-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 25"
+          height="16px"
+        >
+          <title>Linktree Logo</title>
+          <desc>Linktree Logo Symbol</desc>
+          <path
+            d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+            fill="#000000"
+          ></path>
+        </svg>
+        <p class="fw-bold my-0">Join atmajamgm.wuling on Linktree</p>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
