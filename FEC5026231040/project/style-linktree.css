@@ -21,15 +21,15 @@ body {
 .logo {
   width: 8rem;
 }
-/* Styling untuk membuat Nav Pills berbentuk Oval */
+
 .nav-pills {
-  background-color: var(--bs-primary); /* Warna background navbar */
-  border-radius: 50px; /* Membuat oval */
+  background-color: var(--bs-primary);
+  border-radius: 50px;
   padding: 5px;
   display: inline-flex;
 }
 .nav-pills .nav-link {
-  border-radius: 50px; /* Membuat setiap tab menjadi oval */
+  border-radius: 50px;
   padding: 10px 30px;
   transition: 0.3s;
   color: var(--bs-secondary);
@@ -42,7 +42,25 @@ body {
 input:focus {
   box-shadow: none !important;
   outline: none !important;
-  border: none !important;
+}
+
+.container-content {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-links {
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 540px;
+  position: relative;
+  align-items: center;
 }
 
 .container-shop {
@@ -55,4 +73,95 @@ input:focus {
   margin-top: 10px;
   border-radius: 10px;
   width: 100%;
+}
+
+/*Efek Hover*/
+.container-join {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  opacity: 50%;
+  width: 360px;
+  height: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 30px;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--bs-primary);
+}
+
+.container-links,
+.container-shop,
+.container-join {
+  transition: all 0.3s ease;
+}
+
+.container-links:hover,
+.container-shop:hover,
+.container-join:hover {
+  background-color: var(--bs-secondary);
+  color: var(--bs-primary);
+  opacity: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-links p,
+.container-shop p,
+.container-links i,
+.container-shop i {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.container-links:hover p,
+.container-shop:hover p,
+.container-links:hover i,
+.container-shop:hover i {
+  color: var(--bs-primary);
+}
+
+/*Animasi Transisi Geser Links Shop*/
+.tab-pane {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+  z-index: 0;
+}
+
+.tab-pane.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+}
+
+.slide-in {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/* Exit animations */
+.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+  opacity: 0;
 }
